@@ -25,6 +25,7 @@ def say_hello():
 	return '''
 	<p>Hello, World, I am a Flask app!</p>
 	<p><a href ="/about">About this app</a></p>
+	<p><a href ="/contact">Contact me</a></p>
 	'''
 
 @app.route('/about')
@@ -32,7 +33,16 @@ def about():
 	return '''
 	<p>This app is running on the Foasi web framework.</p>
 	<p><a href="https://flask.palletsprojects.com/" target="_blank">Learn mmmore about Flask</a></p>
+	<p><a href="/">Home</a></p>
+	<p><a href ="/contact">Contact me</a></p>
 	'''
+@app.route('/contact')
+def contact():
+	return '''
+	<p>Please contact me if have any qustion</p>
+	<p>email:c23414514@mytudublin.ie</p>
+	<p><a href="/">Home</a></p>
+	<p><a href ="/about">About this app</a></p>
 EOF
 
 echo "Step 6 :Setup"
@@ -44,4 +54,3 @@ echo "Visit in the browser: http://localhost:5000"
 echo "--------------------------------------------"
 
 flask --app hello run --host=0.0.0.0
-
