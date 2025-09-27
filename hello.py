@@ -22,7 +22,7 @@ def about():
 def contact():
 	return'''
 	<p>Please contact me if you have any qustion</p>
-	<p>mail:C23414514@mytudublin.ie</p>
+	<p>mail:C23387203@mytudublin.ie</p>
 	<p><a href="/">Back to Home</a></p>
 	<p><a href="/about">About this app</a></p>
 	'''
