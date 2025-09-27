@@ -14,7 +14,8 @@ def say_hello():
 def about():
 	return '''
 	<p>This app is running on the Foasi web framework.</p>
-	<p><a href="https://flask.palletsprojects.com/" target="_blank">Learn mmmore about Flask</a></p>
+	<p><a href="https://flask.palletsprojects.com/" target="_blank">Learn more about Flask</a></p>
+	<p><a href="https://www.python.org/" target="_blank">Learn more about Python</a></p>
 	<p><a href="/">Back to Home</a></p>
 	<p><a href="/contact">Contact me</a></p>
 	'''
