@@ -12,7 +12,7 @@ python3 -m venv .my_venv
 
 echo "Step 4 :Installing Flask"
 source .my_venv/bin/activate
-pip install flask
+pip3 install --break-system-packages flask
 
 echo "Step 5 :Creating Flsk app"
 cat > hello.py << 'EOF'
@@ -25,7 +25,6 @@ def say_hello():
 	return '''
 	<p>Welcome!</p>
 	<p><a href ="/about">About this app</a></p>
-	<p><a href ="/contact">Contact me</a></p>
 	'''
 
 @app.route('/about')
@@ -34,15 +33,7 @@ def about():
 	<p>This app is running on the Foasi web framework.</p>
 	<p><a href="https://flask.palletsprojects.com/" target="_blank">Learn mmmore about Flask</a></p>
 	<p><a href="/">Home</a></p>
-	<p><a href ="/contact">Contact me</a></p>
 	'''
-@app.route('/contact')
-def contact():
-	return '''
-	<p>Please contact me if have any qustion</p>
-	<p>email:c23414514@mytudublin.ie</p>
-	<p><a href="/">Home</a></p>
-	<p><a href ="/about">About this app</a></p>
 EOF
 
 echo "Step 6 :Setup"
